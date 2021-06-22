@@ -1,0 +1,8 @@
+#container
+{
+    width:  inherit; /*or 70%, or what you want*/
+    height: 500px; /*or 70%, or what you want*/
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+  }

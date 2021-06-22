@@ -1,0 +1,282 @@
+
+$santander: #ec0000;
+
+body {
+    margin: 0;
+    font-family: 'Roboto', 
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+ }
+
+ .auth__main {
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     margin: 0px;
+     height: 100vh;
+     width: 100vw;
+     background-image: url("https://images.xceed.me/bars/covers/journey-into-the-night-bar-berlin-xceed0d59.jpeg");
+     background-size: cover;   
+ }
+
+ .auth_box_container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: start;
+     flex-wrap: wrap;
+     background-color: #FFF;
+     padding: 20px;
+     border: 0.5px solid #CCC;
+
+     width: 500px;
+     height: 500px;
+ }
+
+ .auth_form_container {
+     display: flex;
+     flex-direction: column;
+     align-items: center;
+     justify-content: center;
+     flex-wrap: wrap;
+ }
+
+ .auth__logout {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+ }
+
+ 
+ // Button
+.btn-login {
+    width: 100%;
+    font-size: 14px; 
+    margin-bottom: 25px;     
+}
+    
+.btn-primary {
+    background-color: $santander;
+    color: #FFF;
+}
+ .btn-primary:hover {
+    background-color: white; 
+    cursor: pointer;
+    border-color: $santander;
+    color: $santander;
+ }
+
+ // Links
+
+ .link {
+     text-decoration: none;
+     color: $santander;
+     width: 20px;
+ }
+
+ .link:hover {
+     color: #ce1616;
+ }
+
+
+ .santander_logo {
+     width: 180px;
+ }
+ 
+.pointer {
+    cursor: pointer;
+}
+
+ 
+ .navbar__main {
+     display: flex;
+     flex-direction: row;
+     flex-wrap: nowrap;
+     justify-content: space-between;
+     border-bottom: 0.5px solid #CCC;
+     padding: 15px;
+    }
+    
+    .dashboard_main {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .dashboard__section {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-start;
+        flex-wrap: wrap;
+        padding: 30px;
+    }
+    
+    .sidebar__main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        padding: 25px;
+        
+        
+    }
+    
+    .sidebar__weather {
+        width: 300px;
+        padding: 20px;
+        margin-bottom: 20px;
+
+
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        
+        //border: 1px solid $santander;
+        //color: $santander;
+        background-color: $santander;
+        color: #FFF;
+
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    }
+
+    .sidebar__weather_info {
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .pointer {
+        cursor: pointer;
+    }
+
+    .sidebar__new_meetup {
+        width: 300px;
+        padding: 20px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        text-align: center;
+        box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    }
+
+    .sidebar_beer_count {
+        margin: 10px;
+        padding: 5px;
+        border: 1px solid $santander;
+    }
+
+    .sidebar_beer_count label {
+        color:$santander
+    }
+    
+    .meetups_main {
+        display: flex;
+        flex-direction: column;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: space-around;
+        padding: 25px;
+        flex-grow: 4;
+        
+    }
+
+    .forms__text_error {
+        color: $santander;
+        font-size: small;
+    }
+
+      //Metup
+
+  .meetup__container {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 15px;
+    margin-bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+    
+  }
+
+  .meetup__image {
+        width: 200px;
+  }
+
+  .meetup__body {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-grow: 1;
+  }
+
+  .meetup__body p {
+      font-size: 14px;
+      color:#2d3436;
+  }
+
+  .meetup__footer {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-end;
+  }
+
+  .meetup__footer button {
+    width: 100%;
+    background-color: white; 
+    cursor: pointer;
+    border-color: $santander;
+    color: $santander;
+  }
+
+  .meetup__footer button:hover {
+    background-color: $santander;
+    color: #FFF;
+  }
+
+    
+    // @media querys
+    
+     @media (max-width: 600px) {
+    
+        .auth_box_container {
+            width: 100%;
+            height: 100%;
+        }
+
+        .meetup__image {
+            width: 100%;
+            
+        }
+     
+
+        
+    }
+    
+    @media (max-width: 1020px) {
+        .meetup__container {
+            flex-direction: column;
+            
+        }
+        
+        .sidebar__main {
+          
+        }
+    
+        .sidebar__weather  {
+            width: 100%;
+        }
+    
+        .sidebar__new_meetup {
+            width: 100%;
+        }
+     }
+    
+    
+    
+    
+    
+    
