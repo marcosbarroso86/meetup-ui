@@ -29,6 +29,7 @@ _React Router_
 _inspirado en atomic design_ (https://bradfrost.com/blog/post/atomic-web-design/)
 _Bootstrap_
 _Sass_
+_Flexbox_
 
 ## Autores ✒️
 
